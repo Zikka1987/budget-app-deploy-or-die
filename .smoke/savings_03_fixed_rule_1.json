@@ -1,0 +1,14 @@
+{
+  "id": "28a298e6-8748-4f0c-91a6-a78ca98e100a",
+  "household_id": "00000000-0000-0000-0000-000000000000",
+  "category_id": "02d0a0f5-ef38-40b3-845f-1e75f724f22d",
+  "rule_type": "fixed_monthly",
+  "label": "Vacation fund",
+  "percent_value": null,
+  "fixed_amount": 2000.0,
+  "is_active": true,
+  "created_by": "977265dd-f100-45da-a5ec-e8cc5748d6a8",
+  "created_at": "2026-04-20T23:31:38.081596+00:00",
+  "updated_at": "2026-04-20T23:31:38.081596+00:00",
+  "category_name": "Emergency Fund (smoke)"
+}

@@ -1,0 +1,72 @@
+{
+  "proposals": [
+    {
+      "id": "a880a536-db26-4b2b-a895-a103b78ec7cf",
+      "household_id": "00000000-0000-0000-0000-000000000000",
+      "savings_rule_id": "a516f006-9086-4d41-bf78-6e897aa4c42b",
+      "budget_month_id": "1e4eecc9-cae7-483d-8019-da85592a5007",
+      "proposed_amount": 5000.0,
+      "final_amount": null,
+      "status": "pending",
+      "calculation_basis": "{\"percent\": \"10.00\", \"rule_type\": \"percent_of_income\", \"total_income\": \"50000.00\"}",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "transaction_id": null,
+      "created_at": "2026-04-20T23:31:39.882225+00:00",
+      "updated_at": "2026-04-20T23:31:39.882225+00:00",
+      "rule_label": "10% emergency fund",
+      "budget_month": "2026-04-01"
+    },
+    {
+      "id": "fd6274fe-5890-44fa-b0fd-bed0d40b9a3f",
+      "household_id": "00000000-0000-0000-0000-000000000000",
+      "savings_rule_id": "28a298e6-8748-4f0c-91a6-a78ca98e100a",
+      "budget_month_id": "1e4eecc9-cae7-483d-8019-da85592a5007",
+      "proposed_amount": 2000.0,
+      "final_amount": null,
+      "status": "pending",
+      "calculation_basis": "{\"rule_type\": \"fixed_monthly\", \"fixed_amount\": \"2000.00\"}",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "transaction_id": null,
+      "created_at": "2026-04-20T23:31:39.882225+00:00",
+      "updated_at": "2026-04-20T23:31:39.882225+00:00",
+      "rule_label": "Vacation fund",
+      "budget_month": "2026-04-01"
+    },
+    {
+      "id": "41e7a832-1c23-4af6-94b7-734ca758c33c",
+      "household_id": "00000000-0000-0000-0000-000000000000",
+      "savings_rule_id": "db90ed08-5ff8-4e75-9cec-476a23d8c367",
+      "budget_month_id": "1e4eecc9-cae7-483d-8019-da85592a5007",
+      "proposed_amount": 1500.0,
+      "final_amount": null,
+      "status": "pending",
+      "calculation_basis": "{\"rule_type\": \"fixed_monthly\", \"fixed_amount\": \"1500.00\"}",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "transaction_id": null,
+      "created_at": "2026-04-20T23:31:39.882225+00:00",
+      "updated_at": "2026-04-20T23:31:39.882225+00:00",
+      "rule_label": "Car repair fund",
+      "budget_month": "2026-04-01"
+    },
+    {
+      "id": "f3f89d4c-7ebd-4593-b1c0-233338f04880",
+      "household_id": "00000000-0000-0000-0000-000000000000",
+      "savings_rule_id": "23df6b99-45eb-41e1-8f3e-717d6156ab71",
+      "budget_month_id": "1e4eecc9-cae7-483d-8019-da85592a5007",
+      "proposed_amount": 500.0,
+      "final_amount": null,
+      "status": "pending",
+      "calculation_basis": "{\"rule_type\": \"fixed_monthly\", \"fixed_amount\": \"500.00\"}",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "transaction_id": null,
+      "created_at": "2026-04-20T23:31:39.882225+00:00",
+      "updated_at": "2026-04-20T23:31:39.882225+00:00",
+      "rule_label": "New appliance fund",
+      "budget_month": "2026-04-01"
+    }
+  ]
+}

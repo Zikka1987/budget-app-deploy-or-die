@@ -1,0 +1,15 @@
+{
+  "household": {
+    "id": "8b64e14d-af98-45c5-90de-f1f9f819958d",
+    "name": "Invite Verify HH",
+    "created_at": "2026-04-26T16:51:27.186444Z"
+  },
+  "member": {
+    "id": "8f0ad1bd-b585-4025-b6b5-aa99b870b100",
+    "household_id": "8b64e14d-af98-45c5-90de-f1f9f819958d",
+    "user_id": "665f1a16-d488-4c62-be84-3f9f5174b67c",
+    "display_name": "Invitee User",
+    "role": "member",
+    "joined_at": "2026-04-26T16:51:30.260294Z"
+  }
+}

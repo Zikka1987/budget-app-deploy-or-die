@@ -1,0 +1,17 @@
+{
+  "id": "28f847cc-9f8a-4b34-9431-d3f123376beb",
+  "household_id": "00000000-0000-0000-0000-000000000000",
+  "savings_rule_id": "8a71b812-0136-4100-8245-ad1ea8d3709a",
+  "budget_month_id": "1e4eecc9-cae7-483d-8019-da85592a5007",
+  "proposed_amount": 1500.0,
+  "final_amount": 1750.0,
+  "status": "posted",
+  "calculation_basis": "{\"rule_type\": \"fixed_monthly\", \"fixed_amount\": \"1500.00\"}",
+  "reviewed_by": "977265dd-f100-45da-a5ec-e8cc5748d6a8",
+  "reviewed_at": "2026-04-20T23:34:27.443471+00:00",
+  "transaction_id": "f8601ee3-bed1-493f-8372-d4c1b899ad00",
+  "created_at": "2026-04-20T23:34:26.224023+00:00",
+  "updated_at": "2026-04-20T23:34:27.443471+00:00",
+  "rule_label": "Phase4 B (1500)",
+  "budget_month": "2026-04-01"
+}

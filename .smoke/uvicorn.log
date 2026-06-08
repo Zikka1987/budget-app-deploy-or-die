@@ -1,0 +1,261 @@
+INFO:     Started server process [38940]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8765 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62075 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62122 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62187 - "GET /api/v1/search/receipts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62187 - "GET /api/v1/search/receipts?date_from=2026-12-31&date_to=2026-01-01 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:62263 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62266 - "GET /api/v1/categories/?type=income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62271 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62273 - "POST /api/v1/incomes/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62278 - "GET /api/v1/search/receipts?merchant=SearchSmoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62281 - "GET /api/v1/search/receipts?date_from=2026-04-17&date_to=2026-04-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62287 - "GET /api/v1/search/receipts?amount_min=300&amount_max=400 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62289 - "GET /api/v1/search/receipts?status=posted HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62291 - "GET /api/v1/search/receipts?category_id=2b1a3b57-881f-4c29-804e-508308d181a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62298 - "GET /api/v1/search/transactions?category_id=2b1a3b57-881f-4c29-804e-508308d181a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62301 - "GET /api/v1/search/transactions?type=expense HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62302 - "GET /api/v1/search/transactions?type=income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62303 - "GET /api/v1/search/transactions?source=receipt HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62305 - "GET /api/v1/search/transactions?source=manual_income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62310 - "GET /api/v1/search/transactions?date_from=2026-04-17&date_to=2026-04-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62315 - "GET /api/v1/search/transactions?amount_min=100&amount_max=250 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62318 - "GET /api/v1/search/receipts?date_from=2026-12-31&date_to=2026-01-01 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:62321 - "GET /api/v1/search/receipts?amount_min=999&amount_max=1 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:62322 - "GET /api/v1/search/transactions?date_from=2026-12-31&date_to=2026-01-01 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:62325 - "GET /api/v1/search/transactions?amount_min=999&amount_max=1 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:62333 - "GET /api/v1/search/receipts HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:62334 - "GET /api/v1/search/transactions HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:62342 - "POST /api/v1/households/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62347 - "GET /api/v1/search/receipts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62350 - "GET /api/v1/search/transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62418 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62421 - "GET /api/v1/categories/?type=income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62425 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62431 - "POST /api/v1/incomes/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62434 - "GET /api/v1/search/receipts?merchant=SearchSmoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62435 - "GET /api/v1/search/receipts?date_from=2026-04-17&date_to=2026-04-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62438 - "GET /api/v1/search/receipts?amount_min=300&amount_max=400 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62443 - "GET /api/v1/search/receipts?status=posted HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62449 - "GET /api/v1/search/receipts?category_id=0aa77a25-f816-42b7-85fe-bd981c1f140a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62451 - "GET /api/v1/search/transactions?category_id=0aa77a25-f816-42b7-85fe-bd981c1f140a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62454 - "GET /api/v1/search/transactions?type=expense HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62457 - "GET /api/v1/search/transactions?type=income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62462 - "GET /api/v1/search/transactions?source=receipt HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62463 - "GET /api/v1/search/transactions?source=manual_income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62465 - "GET /api/v1/search/transactions?date_from=2026-04-17&date_to=2026-04-17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62466 - "GET /api/v1/search/transactions?amount_min=100&amount_max=250 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62468 - "GET /api/v1/search/receipts?date_from=2026-12-31&date_to=2026-01-01 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:62471 - "GET /api/v1/search/receipts?amount_min=999&amount_max=1 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:62476 - "GET /api/v1/search/transactions?date_from=2026-12-31&date_to=2026-01-01 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:62480 - "GET /api/v1/search/transactions?amount_min=999&amount_max=1 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:62486 - "GET /api/v1/search/receipts HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:62489 - "GET /api/v1/search/transactions HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:62498 - "POST /api/v1/households/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62499 - "GET /api/v1/search/receipts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62500 - "GET /api/v1/search/transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57996 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58004 - "GET /api/v1/onboarding/status HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58149 - "GET /api/v1/onboarding/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58153 - "POST /api/v1/households HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58159 - "POST /api/v1/households/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58181 - "GET /api/v1/onboarding/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58182 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58183 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58184 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58185 - "GET /api/v1/onboarding/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58202 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58203 - "GET /api/v1/dashboard/summary?year=2026&month=4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58204 - "GET /api/v1/dashboard/summary?year=2026&month=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58216 - "GET /api/v1/onboarding/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58218 - "GET /api/v1/dashboard/summary?year=2026&month=4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58750 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58791 - "POST /api/v1/households/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58801 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58802 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58803 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58809 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58810 - "GET /api/v1/budgets/months HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58823 - "PUT /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5/lines/a5a8196d-f421-4881-a156-75fd15992b17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58824 - "PUT /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5/lines/a5a8196d-f421-4881-a156-75fd15992b17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58826 - "PUT /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5/lines/c11fea5d-5f00-4643-a9a8-9fccd0698d0d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58827 - "PUT /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5/lines/72c40219-733b-474d-b42f-4c009846da88 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58828 - "GET /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58839 - "PUT /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5/lines/a5a8196d-f421-4881-a156-75fd15992b17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58840 - "GET /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59169 - "PUT /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5/lines/a5a8196d-f421-4881-a156-75fd15992b17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59171 - "PUT /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5/lines/a5a8196d-f421-4881-a156-75fd15992b17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59173 - "GET /api/v1/budgets/months/a6fdbc16-be40-4320-a956-f813b84e6bc5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59334 - "POST /api/v1/incomes/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:59335 - "GET /api/v1/incomes/?budget_month_id=a6fdbc16-be40-4320-a956-f813b84e6bc5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60056 - "PUT /api/v1/incomes/516012ae-2148-47b6-a15c-6e62b1677473 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60058 - "DELETE /api/v1/incomes/516012ae-2148-47b6-a15c-6e62b1677473 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:60059 - "POST /api/v1/incomes/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60060 - "GET /api/v1/incomes/?budget_month_id=a6fdbc16-be40-4320-a956-f813b84e6bc5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60073 - "PUT /api/v1/household-settings/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60074 - "POST /api/v1/incomes/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60075 - "PUT /api/v1/household-settings/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60081 - "GET /api/v1/dashboard/summary?year=2026&month=4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60082 - "GET /api/v1/dashboard/summary?year=2026&month=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64219 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64248 - "POST /api/v1/households HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:64253 - "POST /api/v1/categories HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:64254 - "POST /api/v1/categories HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:64255 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:64281 - "POST /api/v1/households HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:64285 - "POST /api/v1/categories HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:64286 - "POST /api/v1/categories HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:64287 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:64300 - "POST /api/v1/households HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:64314 - "POST /api/v1/households HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:64324 - "POST /api/v1/households/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64342 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64343 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64344 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64356 - "POST /api/v1/receipts/upload HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64367 - "GET /api/v1/receipts/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64374 - "GET /api/v1/receipts/2fdc0435-a238-403c-a355-ce484c6072e3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64387 - "POST /api/v1/receipts/2fdc0435-a238-403c-a355-ce484c6072e3/parse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64400 - "GET /api/v1/receipts/2fdc0435-a238-403c-a355-ce484c6072e3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64411 - "GET /api/v1/receipts/2fdc0435-a238-403c-a355-ce484c6072e3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64413 - "GET /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/payload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64427 - "POST /api/v1/receipts/2fdc0435-a238-403c-a355-ce484c6072e3/categorize HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64433 - "GET /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/payload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53676 - "PUT /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/items/c3b96d16-a7de-44bf-aa99-551b82354571 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53678 - "GET /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/payload HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53679 - "PUT /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/items/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53722 - "PUT /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/items/c3b96d16-a7de-44bf-aa99-551b82354571 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53724 - "GET /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/payload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53726 - "PUT /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/items/c099d9dc-5578-4146-8757-91c38230320b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53736 - "GET /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/payload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53738 - "PUT /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/items/fb7639f3-22e3-420e-8420-ec8754ad4e91 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53739 - "PUT /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/items/0a05716c-0774-4aee-b29a-1e7bdcbb422a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53741 - "PUT /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/items/6bb2b75a-e14c-4c20-b886-a084d2f5b6f1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53743 - "PUT /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/items/a4a5ba54-6389-4674-9ce3-54cf4b65336f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53744 - "PUT /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/items/58af9c5d-a31e-4abb-bd30-75061d7b13cd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53762 - "POST /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/confirm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53763 - "GET /api/v1/receipts/2fdc0435-a238-403c-a355-ce484c6072e3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53779 - "POST /api/v1/receipts/2fdc0435-a238-403c-a355-ce484c6072e3/parse HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:53780 - "POST /api/v1/receipts/upload HTTP/1.1" 201 Created
+INFO:     127.0.0.1:53782 - "POST /api/v1/receipts/e985bbe7-3582-486f-8262-e437c20cfcf6/categorize HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:53783 - "POST /api/v1/receipt-review/2fdc0435-a238-403c-a355-ce484c6072e3/confirm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63056 - "GET /healthz HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63246 - "GET /api/v1/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63250 - "GET /api/v1/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63254 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63280 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63283 - "GET /api/v1/categories/?type=income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63285 - "POST /api/v1/incomes/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63286 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63287 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63288 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63289 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63290 - "GET /api/v1/savings/rules HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63292 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63293 - "POST /api/v1/savings/proposals/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63294 - "POST /api/v1/savings/proposals/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63295 - "POST /api/v1/savings/proposals/a880a536-db26-4b2b-a895-a103b78ec7cf/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63297 - "POST /api/v1/savings/proposals/fd6274fe-5890-44fa-b0fd-bed0d40b9a3f/reject HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63298 - "POST /api/v1/savings/manual HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63300 - "GET /api/v1/dashboard/summary?year=2026&month=4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63372 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63373 - "GET /api/v1/categories/?type=income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63374 - "POST /api/v1/incomes/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63375 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63376 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63377 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63379 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63380 - "PUT /api/v1/savings/rules/78e36d84-977f-4aaa-a9cb-60013a65cac1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63381 - "PUT /api/v1/savings/rules/8dbb2e70-d37f-4cda-9638-a88813164d7d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63382 - "PUT /api/v1/savings/rules/8dbb2e70-d37f-4cda-9638-a88813164d7d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63383 - "POST /api/v1/savings/proposals/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63384 - "POST /api/v1/savings/proposals/7bd67318-dfa7-4b42-958d-a17fad4c5620/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63386 - "POST /api/v1/savings/proposals/e724c23d-bfa4-40dc-8ec6-40fa24865b8d/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63387 - "POST /api/v1/savings/proposals/e6b77128-d9e2-4ddf-8dfd-7ad947d71af8/reject HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63415 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63416 - "GET /api/v1/categories/?type=income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63417 - "POST /api/v1/incomes/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63418 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63419 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63421 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63422 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63423 - "PUT /api/v1/savings/rules/b8ed5e56-3856-475a-b989-26c5e6512a53 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63424 - "PUT /api/v1/savings/rules/8a71b812-0136-4100-8245-ad1ea8d3709a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63425 - "PUT /api/v1/savings/rules/8a71b812-0136-4100-8245-ad1ea8d3709a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63426 - "POST /api/v1/savings/proposals/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63427 - "POST /api/v1/savings/proposals/62b740a3-a8c0-4d9c-84b0-70ca2ff3a779/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63429 - "POST /api/v1/savings/proposals/28f847cc-9f8a-4b34-9431-d3f123376beb/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63430 - "POST /api/v1/savings/proposals/1da5e038-5b72-4ba5-b751-3a548594bc05/reject HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63431 - "POST /api/v1/savings/proposals/62b740a3-a8c0-4d9c-84b0-70ca2ff3a779/approve HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:63432 - "POST /api/v1/savings/manual HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63433 - "GET /api/v1/dashboard/summary?year=2026&month=4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61332 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61338 - "POST /api/v1/households/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61341 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61342 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61343 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61344 - "POST /api/v1/categories/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61346 - "POST /api/v1/budgets/months/initialize HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61347 - "POST /api/v1/incomes/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61348 - "POST /api/v1/savings/manual HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61349 - "POST /api/v1/savings/rules HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61350 - "POST /api/v1/savings/proposals/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61352 - "POST /api/v1/savings/proposals/028540bc-db98-4dfc-ad0f-d4486d8b05a2/approve HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61354 - "GET /api/v1/search/receipts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61355 - "GET /api/v1/search/receipts?merchant=searchverify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61357 - "GET /api/v1/search/receipts?status=posted HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61360 - "GET /api/v1/search/receipts?date_from=2026-04-24&date_to=2026-04-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61361 - "GET /api/v1/search/receipts?amount_min=400&amount_max=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61362 - "GET /api/v1/search/receipts?category_id=c3af1334-7810-480a-9843-1b7367f53316 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61363 - "GET /api/v1/search/receipts?limit=1&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61364 - "GET /api/v1/search/receipts?limit=1&offset=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61365 - "GET /api/v1/search/transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61370 - "GET /api/v1/search/transactions?type=income HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61373 - "GET /api/v1/search/transactions?type=expense HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61374 - "GET /api/v1/search/transactions?type=savings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61375 - "GET /api/v1/search/transactions?source=receipt HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61376 - "GET /api/v1/search/transactions?source=savings_proposal HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61377 - "GET /api/v1/search/transactions?date_from=2026-04-24&date_to=2026-04-24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61378 - "GET /api/v1/search/transactions?amount_min=100&amount_max=300 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61379 - "GET /api/v1/search/transactions?category_id=c3af1334-7810-480a-9843-1b7367f53316 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61380 - "GET /api/v1/search/transactions?limit=2&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61382 - "GET /api/v1/search/transactions?limit=2&offset=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61383 - "GET /api/v1/search/transactions?type=expense&date_from=2026-04-24&amount_min=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61384 - "GET /api/v1/search/transactions?amount_min=99999999 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61385 - "GET /api/v1/search/receipts?date_from=2026-12-31&date_to=2026-01-01 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:61386 - "GET /api/v1/search/receipts?amount_min=1000&amount_max=10 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:61387 - "GET /api/v1/search/transactions?date_from=2026-12-31&date_to=2026-01-01 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:61388 - "GET /api/v1/search/transactions?amount_min=1000&amount_max=10 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:63951 - "GET /api/v1/openapi.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63959 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63975 - "POST /api/v1/households/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63978 - "POST /api/v1/invites/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63981 - "POST /api/v1/invites/ HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:63984 - "GET /api/v1/invites/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63985 - "GET /api/v1/onboarding/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63986 - "POST /api/v1/invites/lookup HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63987 - "POST /api/v1/invites/accept HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63989 - "GET /api/v1/onboarding/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63990 - "GET /api/v1/households/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63992 - "GET /api/v1/categories/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63993 - "POST /api/v1/invites/accept HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:63995 - "POST /api/v1/invites/accept HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:63998 - "POST /api/v1/invites/accept HTTP/1.1" 410 Gone
+INFO:     127.0.0.1:64005 - "POST /api/v1/invites/ HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:64007 - "DELETE /api/v1/invites/95c3fde2-f8c2-4095-a959-16b30fb999de HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:64009 - "POST /api/v1/invites/accept HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:64103 - "POST /api/v1/households/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64104 - "GET /api/v1/households/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64106 - "GET /api/v1/household-settings/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64107 - "PUT /api/v1/household-settings/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64108 - "GET /api/v1/household-settings/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64110 - "PUT /api/v1/household-settings/ HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:64112 - "PUT /api/v1/household-settings/ HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:64113 - "PUT /api/v1/household-settings/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64114 - "POST /api/v1/invites/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64115 - "POST /api/v1/invites/lookup HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64117 - "POST /api/v1/invites/accept HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64118 - "GET /api/v1/invites/?status=accepted HTTP/1.1" 200 OK

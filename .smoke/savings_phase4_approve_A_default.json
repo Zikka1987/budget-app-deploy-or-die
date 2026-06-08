@@ -1,0 +1,17 @@
+{
+  "id": "62b740a3-a8c0-4d9c-84b0-70ca2ff3a779",
+  "household_id": "00000000-0000-0000-0000-000000000000",
+  "savings_rule_id": "b8ed5e56-3856-475a-b989-26c5e6512a53",
+  "budget_month_id": "1e4eecc9-cae7-483d-8019-da85592a5007",
+  "proposed_amount": 4000.0,
+  "final_amount": 4000.0,
+  "status": "posted",
+  "calculation_basis": "{\"percent\": \"10.00\", \"rule_type\": \"percent_of_income\", \"total_income\": \"40000.00\"}",
+  "reviewed_by": "977265dd-f100-45da-a5ec-e8cc5748d6a8",
+  "reviewed_at": "2026-04-20T23:34:26.814670+00:00",
+  "transaction_id": "51e17427-ca5e-449c-a066-0b23f6a0aec8",
+  "created_at": "2026-04-20T23:34:26.224023+00:00",
+  "updated_at": "2026-04-20T23:34:26.814670+00:00",
+  "rule_label": "Phase4 A (renamed)",
+  "budget_month": "2026-04-01"
+}

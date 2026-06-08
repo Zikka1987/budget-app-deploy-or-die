@@ -1,0 +1,36 @@
+{
+  "month": "2026-04-01",
+  "total_planned_income": "0.00",
+  "total_planned_expenses": "0.00",
+  "total_planned_savings": "0.00",
+  "total_actual_income": "40000.00",
+  "total_actual_expenses": "0.00",
+  "total_actual_savings": "6100.00",
+  "to_be_allocated": "0.00",
+  "actual_balance": "33900.00",
+  "plan_coverage": "40000.00",
+  "savings_rate": "15.25",
+  "income_categories": [
+    {
+      "category_id": "88e6aa3f-d754-4e25-b4a6-fd9008addeda",
+      "category_name": "Loen",
+      "category_type": "income",
+      "planned": "0.00",
+      "actual": "40000.00",
+      "remaining": "-40000.00",
+      "is_over_budget": false
+    }
+  ],
+  "expense_categories": [],
+  "savings_categories": [
+    {
+      "category_id": "23bc11d2-1e9c-4f03-a1a7-e2a077ad55d9",
+      "category_name": "Phase4 Fund",
+      "category_type": "savings",
+      "planned": "0.00",
+      "actual": "6100.00",
+      "remaining": "-6100.00",
+      "is_over_budget": true
+    }
+  ]
+}

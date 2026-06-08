@@ -1,0 +1,26 @@
+{
+  "/households/me": {
+    "status": 403,
+    "body": {
+      "detail": "User is not a member of any household"
+    }
+  },
+  "/household-settings/": {
+    "status": 403,
+    "body": {
+      "detail": "User is not a member of any household"
+    }
+  },
+  "/categories/": {
+    "status": 403,
+    "body": {
+      "detail": "User is not a member of any household"
+    }
+  },
+  "/dashboard/summary": {
+    "status": 403,
+    "body": {
+      "detail": "User is not a member of any household"
+    }
+  }
+}

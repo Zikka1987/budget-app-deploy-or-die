@@ -1,0 +1,24 @@
+{
+  "household": {
+    "id": "a9b6f498-df1a-43cc-8212-e00e8162e36d",
+    "name": "Verify HH",
+    "created_at": "2026-04-14T15:58:08.643222Z"
+  },
+  "member": {
+    "id": "1095d3e1-bc15-49ba-9402-2a6eb9bd9f73",
+    "household_id": "a9b6f498-df1a-43cc-8212-e00e8162e36d",
+    "user_id": "5bfe68b2-6ddb-4cc8-be4b-de197cd93e27",
+    "display_name": "Verifier",
+    "role": "owner",
+    "joined_at": "2026-04-14T15:58:08.643222Z"
+  },
+  "settings": {
+    "id": "5cfffac5-5c7c-49e4-95d4-34c9f0a4ee72",
+    "household_id": "a9b6f498-df1a-43cc-8212-e00e8162e36d",
+    "currency": "DKK",
+    "shift_late_income": false,
+    "late_income_cutoff_day": null,
+    "created_at": "2026-04-14T15:58:08.643222Z",
+    "updated_at": "2026-04-14T15:58:08.643222Z"
+  }
+}

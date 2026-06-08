@@ -1,0 +1,24 @@
+{
+  "household": {
+    "id": "8b64e14d-af98-45c5-90de-f1f9f819958d",
+    "name": "Invite Verify HH",
+    "created_at": "2026-04-26T16:51:27.186444Z"
+  },
+  "member": {
+    "id": "0dc1d94c-83d1-418c-86a2-55633b602e2a",
+    "household_id": "8b64e14d-af98-45c5-90de-f1f9f819958d",
+    "user_id": "2d094eb0-76a0-4ea6-b02a-d68bbee20f28",
+    "display_name": "Inviter",
+    "role": "owner",
+    "joined_at": "2026-04-26T16:51:27.186444Z"
+  },
+  "settings": {
+    "id": "1920e915-8e88-4409-9e72-34718be9528c",
+    "household_id": "8b64e14d-af98-45c5-90de-f1f9f819958d",
+    "currency": "DKK",
+    "shift_late_income": false,
+    "late_income_cutoff_day": null,
+    "created_at": "2026-04-26T16:51:27.186444Z",
+    "updated_at": "2026-04-26T16:51:27.186444Z"
+  }
+}

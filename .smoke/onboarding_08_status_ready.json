@@ -1,0 +1,7 @@
+{
+  "has_household": true,
+  "has_income_category": true,
+  "has_expense_category": true,
+  "has_savings_category": false,
+  "is_ready": true
+}

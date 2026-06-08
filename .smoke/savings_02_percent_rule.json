@@ -1,0 +1,14 @@
+{
+  "id": "a516f006-9086-4d41-bf78-6e897aa4c42b",
+  "household_id": "00000000-0000-0000-0000-000000000000",
+  "category_id": "02d0a0f5-ef38-40b3-845f-1e75f724f22d",
+  "rule_type": "percent_of_income",
+  "label": "10% emergency fund",
+  "percent_value": 10.0,
+  "fixed_amount": null,
+  "is_active": true,
+  "created_by": "977265dd-f100-45da-a5ec-e8cc5748d6a8",
+  "created_at": "2026-04-20T23:31:37.546601+00:00",
+  "updated_at": "2026-04-20T23:31:37.546601+00:00",
+  "category_name": "Emergency Fund (smoke)"
+}

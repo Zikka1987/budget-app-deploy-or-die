@@ -1,0 +1,20 @@
+# Backend
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+asyncpg>=0.30.0
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+python-dotenv>=1.0.0
+python-jose[cryptography]>=3.3.0
+python-multipart>=0.0.18
+httpx>=0.28.0
+
+# Supabase (Auth + Storage only, not for DB writes)
+supabase>=2.11.0
+
+# AI provider
+anthropic>=0.42.0
+
+# Testing
+pytest>=8.3.0
+pytest-asyncio>=0.25.0

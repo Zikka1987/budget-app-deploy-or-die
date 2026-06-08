@@ -1,0 +1,31 @@
+{
+  "results": [
+    {
+      "id": "6b5c429a-68c7-4ad3-997b-ae90710fe8fa",
+      "type": "expense",
+      "source": "receipt",
+      "category_id": "2039c798-8c54-46ed-a87b-2a995839ad93",
+      "category_name": "Groceries (search)",
+      "amount": "275.00",
+      "description": "Item A",
+      "transaction_date": "2026-04-26",
+      "effective_date": "2026-04-26",
+      "store_name": "SearchVerifyMart",
+      "created_at": "2026-04-26T16:52:05.080902Z"
+    },
+    {
+      "id": "55639ed5-41af-4483-8ecf-4abef259254b",
+      "type": "expense",
+      "source": "receipt",
+      "category_id": "dff25aa8-6604-44f8-86bb-2a58725d011f",
+      "category_name": "Transport (search)",
+      "amount": "150.00",
+      "description": "Item B",
+      "transaction_date": "2026-04-26",
+      "effective_date": "2026-04-26",
+      "store_name": "SearchVerifyMart",
+      "created_at": "2026-04-26T16:52:05.080902Z"
+    }
+  ],
+  "total": 2
+}

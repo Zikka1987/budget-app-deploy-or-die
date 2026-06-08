@@ -1,0 +1,8 @@
+Loaded seed: seed_categories.sql (2940 bytes)
+Category counts for placeholder household:
+  income   3
+  expense  17
+  savings  3
+  TOTAL    23
+
+Placeholder household_id: 00000000-0000-0000-0000-000000000000

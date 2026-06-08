@@ -1,0 +1,3 @@
+Loaded migration: 00001_initial_schema.sql (22970 bytes)
+Migration executed without raising.
+Public app tables present after migration: 13/13

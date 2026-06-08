@@ -1,0 +1,19 @@
+{
+  "page1": {
+    "results": [
+      {
+        "id": "2b345d3e-111a-4945-81cd-a7e0ddf16f81",
+        "store_name": "SearchVerifyMart",
+        "receipt_date": "2026-04-26",
+        "total_amount": "425.00",
+        "status": "posted",
+        "created_at": "2026-04-26T16:52:04.859993Z"
+      }
+    ],
+    "total": 1
+  },
+  "page2": {
+    "results": [],
+    "total": 1
+  }
+}

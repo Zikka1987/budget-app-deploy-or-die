@@ -1,0 +1,14 @@
+{
+  "id": "b8ed5e56-3856-475a-b989-26c5e6512a53",
+  "household_id": "00000000-0000-0000-0000-000000000000",
+  "category_id": "23bc11d2-1e9c-4f03-a1a7-e2a077ad55d9",
+  "rule_type": "percent_of_income",
+  "label": "Phase4 A (renamed)",
+  "percent_value": 10.0,
+  "fixed_amount": null,
+  "is_active": true,
+  "created_by": "977265dd-f100-45da-a5ec-e8cc5748d6a8",
+  "created_at": "2026-04-20T23:34:23.468057+00:00",
+  "updated_at": "2026-04-20T23:34:24.792686+00:00",
+  "category_name": "Phase4 Fund"
+}

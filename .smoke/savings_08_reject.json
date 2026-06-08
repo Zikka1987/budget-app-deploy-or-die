@@ -1,0 +1,17 @@
+{
+  "id": "fd6274fe-5890-44fa-b0fd-bed0d40b9a3f",
+  "household_id": "00000000-0000-0000-0000-000000000000",
+  "savings_rule_id": "28a298e6-8748-4f0c-91a6-a78ca98e100a",
+  "budget_month_id": "1e4eecc9-cae7-483d-8019-da85592a5007",
+  "proposed_amount": 2000.0,
+  "final_amount": null,
+  "status": "rejected",
+  "calculation_basis": "{\"rule_type\": \"fixed_monthly\", \"fixed_amount\": \"2000.00\"}",
+  "reviewed_by": "977265dd-f100-45da-a5ec-e8cc5748d6a8",
+  "reviewed_at": "2026-04-20T23:31:42.101212+00:00",
+  "transaction_id": null,
+  "created_at": "2026-04-20T23:31:39.882225+00:00",
+  "updated_at": "2026-04-20T23:31:42.101212+00:00",
+  "rule_label": "Vacation fund",
+  "budget_month": "2026-04-01"
+}

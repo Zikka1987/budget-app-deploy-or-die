@@ -1,0 +1,20 @@
+{
+  "id": "1541fa1c-5d02-4e1a-ba90-1d625045e019",
+  "group_id": "cf2c2d3b-979b-4413-aee4-377e11be3013",
+  "household_id": "00000000-0000-0000-0000-000000000000",
+  "type": "savings",
+  "category_id": "23bc11d2-1e9c-4f03-a1a7-e2a077ad55d9",
+  "amount": 350.0,
+  "transaction_date": "2026-04-21",
+  "effective_date": "2026-04-21",
+  "source": "manual_savings",
+  "posted_by": "977265dd-f100-45da-a5ec-e8cc5748d6a8",
+  "budget_month_id": "1e4eecc9-cae7-483d-8019-da85592a5007",
+  "description": "Phase4 manual savings",
+  "details": null,
+  "savings_proposal_id": null,
+  "created_at": "2026-04-20T23:34:28.964927+00:00",
+  "updated_at": "2026-04-20T23:34:28.964927+00:00",
+  "category_name": "Phase4 Fund",
+  "budget_month": "2026-04-01"
+}

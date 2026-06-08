@@ -1,0 +1,3 @@
+{
+  "detail": "Cannot clear late_income_cutoff_day while shift_late_income is enabled"
+}

@@ -1,0 +1,31 @@
+{
+  "results": [
+    {
+      "id": "3153833f-7b84-4beb-993c-3280fd02eaec",
+      "type": "expense",
+      "source": "receipt",
+      "category_id": "0aa77a25-f816-42b7-85fe-bd981c1f140a",
+      "category_name": "Search Smoke Expense",
+      "amount": "200.00",
+      "description": "Item A",
+      "transaction_date": "2026-04-17",
+      "effective_date": "2026-04-17",
+      "store_name": "SearchSmokeStore",
+      "created_at": "2026-04-17T09:13:40.656016Z"
+    },
+    {
+      "id": "9fd8256b-e330-4c89-aaf3-a40180c30e3b",
+      "type": "expense",
+      "source": "receipt",
+      "category_id": "0aa77a25-f816-42b7-85fe-bd981c1f140a",
+      "category_name": "Search Smoke Expense",
+      "amount": "150.00",
+      "description": "Item B",
+      "transaction_date": "2026-04-17",
+      "effective_date": "2026-04-17",
+      "store_name": "SearchSmokeStore",
+      "created_at": "2026-04-17T09:13:40.656016Z"
+    }
+  ],
+  "total": 2
+}

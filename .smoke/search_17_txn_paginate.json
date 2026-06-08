@@ -1,0 +1,64 @@
+{
+  "page1": {
+    "results": [
+      {
+        "id": "55639ed5-41af-4483-8ecf-4abef259254b",
+        "type": "expense",
+        "source": "receipt",
+        "category_id": "dff25aa8-6604-44f8-86bb-2a58725d011f",
+        "category_name": "Transport (search)",
+        "amount": "150.00",
+        "description": "Item B",
+        "transaction_date": "2026-04-26",
+        "effective_date": "2026-04-26",
+        "store_name": "SearchVerifyMart",
+        "created_at": "2026-04-26T16:52:05.080902Z"
+      },
+      {
+        "id": "6b5c429a-68c7-4ad3-997b-ae90710fe8fa",
+        "type": "expense",
+        "source": "receipt",
+        "category_id": "2039c798-8c54-46ed-a87b-2a995839ad93",
+        "category_name": "Groceries (search)",
+        "amount": "275.00",
+        "description": "Item A",
+        "transaction_date": "2026-04-26",
+        "effective_date": "2026-04-26",
+        "store_name": "SearchVerifyMart",
+        "created_at": "2026-04-26T16:52:05.080902Z"
+      }
+    ],
+    "total": 5
+  },
+  "page2": {
+    "results": [
+      {
+        "id": "3d74c1b8-d50a-4f94-b251-71abed7391ab",
+        "type": "savings",
+        "source": "manual_savings",
+        "category_id": "0b710214-d9c4-496b-ae86-fcbd5bbbeb20",
+        "category_name": "Emergency (search)",
+        "amount": "500.00",
+        "description": "Search verify manual savings",
+        "transaction_date": "2026-04-26",
+        "effective_date": "2026-04-26",
+        "store_name": null,
+        "created_at": "2026-04-26T16:52:02.420726Z"
+      },
+      {
+        "id": "55693706-84f5-4846-862f-f4fb9074dc27",
+        "type": "income",
+        "source": "manual_income",
+        "category_id": "395b1abd-0d39-431b-a62a-5a3980a1a01b",
+        "category_name": "Salary (search)",
+        "amount": "30000.00",
+        "description": "Search verify income",
+        "transaction_date": "2026-04-26",
+        "effective_date": "2026-04-26",
+        "store_name": null,
+        "created_at": "2026-04-26T16:52:01.715353Z"
+      }
+    ],
+    "total": 5
+  }
+}

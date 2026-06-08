@@ -1,0 +1,21 @@
+{
+  "results": [
+    {
+      "id": "0e7df85e-2b23-47dc-915f-2d928102b3f3",
+      "store_name": "SearchSmokeStore",
+      "receipt_date": "2026-04-17",
+      "total_amount": "350.00",
+      "status": "posted",
+      "created_at": "2026-04-17T09:13:40.465177Z"
+    },
+    {
+      "id": "5ea5e049-de75-4787-aaf0-0ee1e8c73ed8",
+      "store_name": "365 discount",
+      "receipt_date": "2007-04-26",
+      "total_amount": "401.80",
+      "status": "posted",
+      "created_at": "2026-04-12T10:28:50.260474Z"
+    }
+  ],
+  "total": 2
+}

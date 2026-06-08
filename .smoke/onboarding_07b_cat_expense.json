@@ -1,0 +1,10 @@
+{
+  "id": "ef4fa53a-c268-4a3f-b985-bef08a5067a4",
+  "household_id": "a9b6f498-df1a-43cc-8212-e00e8162e36d",
+  "type": "expense",
+  "name": "Groceries",
+  "icon": null,
+  "sort_order": 0,
+  "archived_at": null,
+  "created_at": "2026-04-14T15:58:29.086056Z"
+}
