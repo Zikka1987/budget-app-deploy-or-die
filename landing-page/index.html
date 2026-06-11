@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SaldoHelt er et fælles budgetoverblik for husstanden – indtægter, udgifter og opsparing samlet ét sted, uden regneark.">
+  <title>SaldoHelt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>SaldoHelt</h1>
+      <p class="tagline">Fælles husstandsbudget – uden regneark</p>
+      <p class="intro">
+        SaldoHelt samler husstandens indtægter, udgifter og opsparing ét sted,
+        så I altid har et fælles overblik over økonomien – uden at vedligeholde
+        et regneark.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="features container" aria-labelledby="features-heading">
+      <h2 id="features-heading">Funktioner</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Indtægter</h3>
+          <p>Registrer husstandens indtægter manuelt, måned for måned.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Udgifter</h3>
+          <p>Kategoriser og følg jeres månedlige udgifter i jeres egne kategorier.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Opsparing</h3>
+          <p>Opsparing er en fast del af budgettet – ikke noget der kommer til sidst.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Kvitteringer</h3>
+          <p>Fotografér kvitteringer. AI foreslår en kategori, og I bekræfter selv, før noget bogføres.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Fælles overblik</h3>
+          <p>Ét budget, delt mellem to husstandsmedlemmer – samme tal, samme overblik.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="technology container" aria-labelledby="technology-heading">
+      <h2 id="technology-heading">Teknologi</h2>
+      <dl class="tech-list">
+        <div class="tech-item">
+          <dt>Mobilapp</dt>
+          <dd>React Native / Expo</dd>
+        </div>
+        <div class="tech-item">
+          <dt>Backend</dt>
+          <dd>FastAPI / Python</dd>
+        </div>
+        <div class="tech-item">
+          <dt>Database, login og filer</dt>
+          <dd>Supabase</dd>
+        </div>
+        <div class="tech-item">
+          <dt>Kommende API-adresse</dt>
+          <dd>api.saldohelt.dk</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="status container" aria-labelledby="status-heading">
+      <h2 id="status-heading">Status</h2>
+      <ul class="status-list">
+        <li><span class="status-dot status-done" aria-hidden="true"></span> Domæne og DNS er konfigureret</li>
+        <li><span class="status-dot status-done" aria-hidden="true"></span> Server og firewall er sat op</li>
+        <li><span class="status-dot status-pending" aria-hidden="true"></span> Backend og app er under udvikling og endnu ikke tilgængelig</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        SaldoHelt er et personligt projekt under udvikling. Det fungerer
+        desuden som et praktisk deployment-eksempel (Deploy or Die).
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
