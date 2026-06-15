@@ -48,3 +48,7 @@ node_modules/
 
 # Supabase local
 .supabase/
+
+# Server/runtime env files
+.env.*
+!.env.example
