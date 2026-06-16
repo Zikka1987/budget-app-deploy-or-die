@@ -27,13 +27,45 @@ jobs:
             -o IdentitiesOnly=yes \
             "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" '
               set -e
+
               cd /home/andreas/apps/budget-app-deploy-or-die
+
               git pull --ff-only origin main
+
               docker compose up -d --build
+
               docker compose ps
-              curl -fsS http://127.0.0.1:8000/health
+
+              echo "Waiting for local backend health check..."
+
+              for i in $(seq 1 30); do
+                if curl -fsS http://127.0.0.1:8000/health; then
+                  echo "Local backend health check passed."
+                  exit 0
+                fi
+
+                echo "Backend not ready yet. Attempt $i/30..."
+                sleep 2
+              done
+
+              echo "Backend did not become healthy in time."
+              docker compose logs --tail=100 backend
+              exit 1
             '
 
       - name: Verify public API
         run: |
-          curl -fsS https://api.saldohelt.dk/health
+          echo "Waiting for public API health check..."
+
+          for i in $(seq 1 30); do
+            if curl -fsS https://api.saldohelt.dk/health; then
+              echo "Public API health check passed."
+              exit 0
+            fi
+
+            echo "Public API not ready yet. Attempt $i/30..."
+            sleep 2
+          done
+
+          echo "Public API did not become healthy in time."
+          exit 1
