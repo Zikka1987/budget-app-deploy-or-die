@@ -1,0 +1,39 @@
+name: Deploy SaldoHelt Backend
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy backend to VPS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          printf '%s\n' "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/deploy_key
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Deploy on server
+        run: |
+          ssh -i ~/.ssh/deploy_key \
+            -p "${{ secrets.SSH_PORT }}" \
+            -o IdentitiesOnly=yes \
+            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" '
+              set -e
+              cd /home/andreas/apps/budget-app-deploy-or-die
+              git pull --ff-only origin main
+              docker compose up -d --build
+              docker compose ps
+              curl -fsS http://127.0.0.1:8000/health
+            '
+
+      - name: Verify public API
+        run: |
+          curl -fsS https://api.saldohelt.dk/health
