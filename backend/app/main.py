@@ -17,10 +17,17 @@ async def lifespan(app: FastAPI):
     await close_db_pool()
 
 
+docs_url = "/docs" if settings.app_debug else None
+redoc_url = "/redoc" if settings.app_debug else None
+openapi_url = "/openapi.json" if settings.app_debug else None
+
 app = FastAPI(
     title="Budget App",
     version="0.1.0",
     lifespan=lifespan,
+    docs_url=docs_url,
+    redoc_url=redoc_url,
+    openapi_url=openapi_url,
 )
 
 app.add_middleware(
