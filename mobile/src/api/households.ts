@@ -12,7 +12,7 @@ export function useCreateHousehold() {
 
   return useMutation({
     mutationFn: (data: HouseholdCreateRequest) =>
-      apiClient.post<HouseholdCreateResponse>('/households', data),
+      apiClient.post<HouseholdCreateResponse>('/households/', data),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['onboarding', 'status'] });
     },

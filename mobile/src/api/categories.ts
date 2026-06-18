@@ -14,7 +14,7 @@ export function useCategories(type?: TransactionType) {
 
   return useQuery({
     queryKey: ['categories', { type }],
-    queryFn: () => apiClient.get<CategoryResponse[]>('/categories', params),
+    queryFn: () => apiClient.get<CategoryResponse[]>('/categories/', params),
   });
 }
 
@@ -23,7 +23,7 @@ export function useCreateCategory() {
 
   return useMutation({
     mutationFn: (data: CategoryCreateRequest) =>
-      apiClient.post<CategoryResponse>('/categories', data),
+      apiClient.post<CategoryResponse>('/categories/', data),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['categories'] });
       queryClient.invalidateQueries({ queryKey: ['onboarding', 'status'] });
@@ -89,3 +89,4 @@ export function useArchiveCategory() {
     },
   });
 }
+
