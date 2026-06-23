@@ -3,23 +3,23 @@ from decimal import Decimal
 from typing import Optional
 from uuid import UUID
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class ExpenseCreate(BaseModel):
     category_id: UUID
-    amount: Decimal
+    amount: Decimal = Field(gt=0, max_digits=12, decimal_places=2)
     transaction_date: date
-    description: Optional[str] = None
-    details: Optional[str] = None
+    description: Optional[str] = Field(default=None, max_length=255)
+    details: Optional[str] = Field(default=None, max_length=1000)
 
 
 class ExpenseUpdate(BaseModel):
     category_id: Optional[UUID] = None
-    amount: Optional[Decimal] = None
+    amount: Optional[Decimal] = Field(default=None, gt=0, max_digits=12, decimal_places=2)
     transaction_date: Optional[date] = None
-    description: Optional[str] = None
-    details: Optional[str] = None
+    description: Optional[str] = Field(default=None, max_length=255)
+    details: Optional[str] = Field(default=None, max_length=1000)
 
 
 class ExpenseResponse(BaseModel):

@@ -3,7 +3,7 @@ from decimal import Decimal
 from typing import Optional
 from uuid import UUID
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class BudgetMonthInitialize(BaseModel):
@@ -11,8 +11,8 @@ class BudgetMonthInitialize(BaseModel):
 
 
 class BudgetLineUpdate(BaseModel):
-    planned_amount: Decimal
-    notes: Optional[str] = None
+    planned_amount: Decimal = Field(ge=0, max_digits=12, decimal_places=2)
+    notes: Optional[str] = Field(default=None, max_length=1000)
 
 
 class BudgetLineResponse(BaseModel):

@@ -3,7 +3,7 @@ from decimal import Decimal
 from typing import Optional
 from uuid import UUID
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from app.models.enums import SavingsRuleType, ProposalStatus
 
@@ -11,15 +11,15 @@ from app.models.enums import SavingsRuleType, ProposalStatus
 class SavingsRuleCreate(BaseModel):
     category_id: UUID
     rule_type: SavingsRuleType
-    label: str
-    percent_value: Optional[Decimal] = None
-    fixed_amount: Optional[Decimal] = None
+    label: str = Field(min_length=1, max_length=100)
+    percent_value: Optional[Decimal] = Field(default=None, ge=0, max_digits=5, decimal_places=2)
+    fixed_amount: Optional[Decimal] = Field(default=None, ge=0, max_digits=12, decimal_places=2)
 
 
 class SavingsRuleUpdate(BaseModel):
-    label: Optional[str] = None
-    percent_value: Optional[Decimal] = None
-    fixed_amount: Optional[Decimal] = None
+    label: Optional[str] = Field(default=None, min_length=1, max_length=100)
+    percent_value: Optional[Decimal] = Field(default=None, ge=0, max_digits=5, decimal_places=2)
+    fixed_amount: Optional[Decimal] = Field(default=None, ge=0, max_digits=12, decimal_places=2)
     is_active: Optional[bool] = None
 
 
@@ -49,10 +49,10 @@ class SavingsProposalResponse(BaseModel):
 
 class ManualSavingsCreate(BaseModel):
     category_id: UUID
-    amount: Decimal
+    amount: Decimal = Field(gt=0, max_digits=12, decimal_places=2)
     transaction_date: date
-    description: Optional[str] = None
-    details: Optional[str] = None
+    description: Optional[str] = Field(default=None, max_length=255)
+    details: Optional[str] = Field(default=None, max_length=1000)
 
 
 class ManualSavingsResponse(BaseModel):
@@ -73,4 +73,4 @@ class GenerateProposalsRequest(BaseModel):
 
 
 class ProposalApprove(BaseModel):
-    final_amount: Optional[Decimal] = None
+    final_amount: Optional[Decimal] = Field(default=None, ge=0, max_digits=12, decimal_places=2)
